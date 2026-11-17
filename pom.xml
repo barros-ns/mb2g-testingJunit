@@ -41,4 +41,21 @@
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>PackageCloud</id>
+            <distributionManagement>
+                <repository>
+                    <id>packagecloud.release</id>
+<!--                ONLY FOR DEMONSTRATION PURPOSES, THIS PackageCloud IS NOT ASSOCIATED WITH MY ACCOUNT-->
+                    <url>packagecloud+https://packagecloud.io/springframeworkguru/snapshot</url>
+                </repository>
+                <snapshotRepository>
+                    <id>packagecloud.snapshot</id>
+                    <url>packagecloud+https://packagecloud.io/springframeworkguru/snapshot</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+    </profiles>
 </project>
